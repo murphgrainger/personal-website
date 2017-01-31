@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '/../client')))
+app.use(express.static(path.join(__dirname, '/client')))
 
 app.use('/', index);
 app.use('/users', users);
@@ -27,7 +27,7 @@ app.use('/users', users);
 
 app.use('*', function(req, res) {
     res.sendFile('index.html', {
-        root: path.join(__dirname, '/../client')
+        root: path.join(__dirname, '/client')
     })
 })
 
