@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npm run start-server & npm run start-client & wait",
+    "start-server": "nodemon app.js",
+    "start-client": "lite-server -c liteserver.config.js"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -15,6 +17,7 @@
     "gitignore": "^0.6.0",
     "hbs": "~4.0.1",
     "knex": "^0.12.6",
+    "lite-server": "^2.2.2",
     "morgan": "~1.7.0",
     "pg": "^6.1.2",
     "serve-favicon": "~2.3.0"
