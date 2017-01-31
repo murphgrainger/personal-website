@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "aws": "node ./bin/www",
+    "aws": "forever start ./bin/www",
     "start": "npm run start-server & npm run start-client & wait",
     "start-server": "nodemon app.js",
     "start-client": "lite-server -c liteserver.config.js"
