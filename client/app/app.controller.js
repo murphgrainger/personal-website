@@ -8,9 +8,7 @@
 
     function AppController($http) {
         const vm = this;
-        vm.$onInit = function() {
-            console.log('hey');
-        }
+        vm.$onInit = function() {}
 
     }
 

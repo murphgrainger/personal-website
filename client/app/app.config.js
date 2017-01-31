@@ -13,25 +13,18 @@
             .warnPalette('red')
             .backgroundPalette('grey');
 
-
-        $stateProvider
-            .state({
-                name: 'app',
-                abstract: true,
-                component: 'appBuild',
-            })
-            // .state({
-            //     name: 'home',
-            //     parent: 'app',
-            //     url: '/',
-            //     component: 'cardList',
-            // })
-            // .state({
-            //     name: 'playground',
-            //     parent: 'app',
-            //     url: '/playground/',
-            //     component: 'playGround',
-            // })
+        // .state({
+        //     name: 'home',
+        //     parent: 'app',
+        //     url: '/',
+        //     component: 'cardList',
+        // })
+        // .state({
+        //     name: 'playground',
+        //     parent: 'app',
+        //     url: '/playground/',
+        //     component: 'playGround',
+        // })
     }
 
 }());
