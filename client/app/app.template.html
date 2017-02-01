@@ -1,18 +1,34 @@
-<main>
-    <section class="coming-soon">
-        <img id="logo" src="images/MG-Logo.svg" alt="">
-        <h1>Site Coming Soon</h1>
-    </section>
-    <div class="icon-row">
+<!-- <section class="coming-soon">
+    <img id="logo" src="images/MG-Logo.svg" alt="">
+    <h1>Site Coming Soon</h1>
+</section>
+<div class="icon-row">
+    <md-icon flex class="icons">
+        <a href="https://www.linkedin.com/in/murphgrainger" target="_blank">
+            <i class=" fa fa-linkedin-square fa-4x" aria-hidden=" true"></i>
+        </md-icon>
         <md-icon flex class="icons">
-            <a href="https://www.linkedin.com/in/murphgrainger" target="_blank">
-                <i class=" fa fa-linkedin-square fa-4x" aria-hidden=" true"></i>
-            </md-icon>
-            <md-icon flex class="icons">
-                <a href="https://github.com/murphgrainger" target="_blank">
-                    <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
-                </a>
-            </md-icon>
+            <a href="https://github.com/murphgrainger" target="_blank">
+                <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+            </a>
+        </md-icon>
+    </div> -->
+<md-content>
+    <md-toolbar flex>
+        <div class="md-toolbar-tools">
+            <md-button aria-label="Go Back">
+                Go Back
+            </md-button>
+            <md-button class="md-raised" aria-label="Learn More">
+                Learn More
+            </md-button>
+            <md-button class="md-fab md-mini" aria-label="Favorite"></md-button>
         </div>
+    </md-toolbar>
+    <main>
         <ui-view></ui-view>
     </main>
+    <footer>
+        <md-toolbar></md-toolbar>
+    </footer>
+</md-content>
