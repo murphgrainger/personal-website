@@ -3,8 +3,8 @@
 
     angular.module('app').config(config)
 
+    function config($stateProvider, $urlRouterProvider, $locationProvider, $mdThemingProvider) {
 
-    function config($mdThemingProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
         $locationProvider.html5Mode(true)
 
         $mdThemingProvider
@@ -13,18 +13,18 @@
             .warnPalette('red')
             .backgroundPalette('grey');
 
-        // .state({
-        //     name: 'home',
-        //     parent: 'app',
-        //     url: '/',
-        //     component: 'cardList',
-        // })
-        // .state({
-        //     name: 'playground',
-        //     parent: 'app',
-        //     url: '/playground/',
-        //     component: 'playGround',
-        // })
+        $stateProvider
+            .state({
+                name: 'app',
+                abstract: true,
+                component: 'app',
+            })
+            .state({
+                name: 'home',
+                parent: 'app',
+                url: '/',
+                component: 'cardList',
+            })
     }
 
 }());

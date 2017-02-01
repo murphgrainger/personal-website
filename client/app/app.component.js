@@ -3,7 +3,7 @@
 
     angular
         .module('app')
-        .component('comingSoon', {
+        .component('app', {
             controller: 'AppController',
             templateUrl: 'app/app.template.html'
         });

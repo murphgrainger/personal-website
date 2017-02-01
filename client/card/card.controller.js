@@ -3,10 +3,10 @@
 
     angular
         .module('app')
-        .controller('AppController', AppController);
+        .controller('CardController', CardController);
 
 
-    function AppController() {
+    function CardController() {
         const vm = this;
         vm.$onInit = function() {}
 

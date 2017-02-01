@@ -5,7 +5,7 @@
   "scripts": {
     "aws": "forever start .server/bin/www",
     "start": "npm run start-server & npm run start-client & wait",
-    "start-server": "nodemon app.js",
+    "start-server": "nodemon server/app.js",
     "start-client": "lite-server -c liteserver.config.js"
   },
   "dependencies": {
